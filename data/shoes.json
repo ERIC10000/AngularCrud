@@ -1,0 +1,25 @@
+[{
+	"name": "Jordan 4",
+	"color": "blue",
+	"price": 20,
+	"availability": true,
+	"pic": "content/img/jordan.jpg"
+}, {
+	"name": "Nike Roma",
+	"color": "red",
+	"price": 25,
+	"availability": true,
+	"pic": "content/img/nike.jpeg"
+}, {
+	"name": "Vans ",
+	"color": "black",
+	"price": 28,
+	"availability": true,
+	"pic": "content/img/vans.jpg"
+}, {
+	"name": "Airforce",
+	"color": "green",
+	"price": 30,
+	"availability": true,
+	"pic": "content/img/airforce.jpeg"
+}]

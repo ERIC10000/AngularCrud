@@ -1,0 +1,26 @@
+<div class="content">
+    
+        <button ng-click="order='name'">Order by Name</button>
+        <button ng-click="order='color'">Order by Color</button>
+        <input type="text" placeholder="Search for Shoes" ng-model="product">
+
+        <ul>
+            <li ng-repeat="shoe in shoes | orderBy: order| filter:product" ng-show="shoe.availability">
+                <img ng-src="{{shoe.pic}}" style="margin: -12px 10px 0 0; float:left; width:50px;" ng-show="shoe.pic">
+                <h3>Name : {{shoe.name | uppercase}} - Price : {{shoe.price | currency: 'KES'}}</h3>
+                <div class="remove" ng-click="removeShoe()">x</div>
+                <span class="belt" style="background-color: {{shoe.color}};"> color {{shoe.color}} </span>
+            </li>
+        </ul>
+
+        <form ng-submit="addShoe()">
+            <input type="text" placeholder="Enter Name" ng-model="newshoe.name">
+            <input type="text" placeholder="Enter Color" ng-model="newshoe.color">
+            <input type="text" placeholder="Enter Price" ng-model="newshoe.price">
+            <input type="submit" value="Add new Shoe">
+        </form>
+    
+
+    
+
+</div>

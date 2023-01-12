@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shoeApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Angular Project</title>
+    <link rel="stylesheet" href="content/css/style.css">
+    <script src="app/lib/angular.min.js"></script>
+    <script src="app/lib/angular-route.min.js"></script>
+
+    <script src="app/app.js"></script>
+
+</head>
+<body>
+    <!-- AngularJS -> Is a JavaScript Framework mainly used for building Single-Page Application(SPA) -->
+    <!-- Framework -> MVC Architecture(Model-View-Controller) -->
+    <!-- Model -> Data Source(Database, JSON-Api, files......) -->
+    <!-- View -> Display Data to the FrontEnd(Browser) -->
+    <!-- Controller -> Provides functionalities to the View, interaction btn (Model and a View) -->
+    <!-- Example: User clicks on a button on the View, UserController recognises the click event and performs an action -->
+    <!-- Function that communicates to the Model and retrieve all the users data -->
+    <!-- contoller passes accessibility of the data to the view -->
+    <!-- Separation of concerns -> Data(Model), HTML(View), Controller(JavaScript)..MVC -->
+    <!-- directives (ng) -> injecting angular functionalities to an html -->
+
+    <!-- <div ng-app>
+
+    </div> -->
+    <!-- {{model}} -->
+
+    <!-- 2-way-Data Binding -->
+    <!-- Directives -->
+    <!-- EXpression -->
+    <!-- Some Directives -->
+
+    <!--  2-way-Data Binding -> When we update content on the html, we also update contents on browser and vice versa-->
+    <!-- directive -> allows to attach a functionality/behavior/action to an html element on the DOM(keyword: ng) -->
+    <!-- Expression -> With bind data to HTML DOM {{}} -->
+    <!-- ng-init -> Create variables -->
+    <!-- ng-repeat -->
+    <!-- Looping: Syntax:  newVariable in Collection -->
+    <!-- Modules -> Container-Like structure to hold various parts of the application -->
+    <!-- controllers, services, filters, directives......   -->
+    <!-- controllers -> control the application, by adding states(properties) and methods(behavior) to an application component-->
+    <!--orderBy (alphabetically), currency, filter(live search), limitTo, lowercase -->
+    <!-- Filters -> changes the display of the output data | -->
+    <!-- ng-include -> organize the html files, Repeat a section of html to the entire document -->
+    <!-- ng-show and ng-hide -->
+    <!--CRUD  -->
+    <!-- ng-click -> Respond to click events -->
+    <!-- ng-submit -> When use click on submit button -->
+    <!-- ng-src: images -->
+    <!-- views and Routing  ng-view directive to create a new view-->
+    <!-- Angular $http Service  -->
+
+
+    <header ng-include="'header.html'"></header>
+    <main ng-view></main>
+    <!-- to introduce routing we need another dependency(angular-route.min.js -> ngRoute) -->
+
+    <!-- It could load either, home.html, or directory.html -->
+
+
+
+
+    
+</body>
+</html>
